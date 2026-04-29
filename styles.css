@@ -215,11 +215,11 @@ h2 {
 }
 
 .selected-research {
-  margin-top: 48px;
+  margin-top: 72px;
 }
 
 .selected-research h3 {
-  margin: 0 0 24px;
+  margin: 0 0 36px;
   color: var(--navy);
   font-family: "Source Serif 4", Georgia, serif;
   font-size: clamp(1.8rem, 3vw, 2.45rem);
@@ -231,48 +231,69 @@ h2 {
 .research-themes {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 22px;
+  gap: 32px;
 }
 
 .research-card {
   min-width: 0;
-  padding: 26px 24px;
+  padding: 34px 30px 32px;
   border: 1px solid var(--line);
-  border-top: 3px solid var(--navy);
-  background: #ffffff;
+  border-top: 4px solid var(--navy);
+  background: #fbfdff;
 }
 
 .research-card h4 {
   margin: 0;
   color: var(--ink);
   font-family: "Source Serif 4", Georgia, serif;
-  font-size: 1.28rem;
+  font-size: 1.38rem;
   font-weight: 600;
   letter-spacing: 0;
-  line-height: 1.18;
+  line-height: 1.2;
 }
 
 .research-card p {
-  margin-top: 18px;
+  margin-top: 22px;
   color: var(--muted);
   font-size: 0.95rem;
-  line-height: 1.65;
+  line-height: 1.72;
+}
+
+.research-card .publication-label {
+  margin-top: 30px;
+  color: var(--navy);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  line-height: 1.3;
+  text-transform: uppercase;
 }
 
 .research-card ul {
   display: grid;
-  gap: 14px;
-  margin: 22px 0 0;
-  padding: 20px 0 0;
+  gap: 0;
+  margin: 14px 0 0;
+  padding: 0;
   border-top: 1px solid var(--line);
   list-style: none;
 }
 
+.research-card li {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+
 .research-card a {
   color: var(--navy);
-  font-size: 0.94rem;
+  font-size: 0.96rem;
   font-weight: 700;
-  line-height: 1.45;
+  line-height: 1.5;
+  text-decoration-thickness: 1px;
+}
+
+.research-card a:hover,
+.research-card a:focus-visible {
+  color: #082138;
 }
 
 .award-list {
@@ -384,6 +405,7 @@ h2 {
 
   .research-themes {
     grid-template-columns: 1fr;
+    gap: 24px;
   }
 
   .link-grid {
